@@ -64,7 +64,7 @@ def insert_row_to_list(my_fruit):
 add_my_fruit=streamlit.text_input('What fruit would you like to add?')
 if streamlit.button('Add a fruit to the list'):
   back_from_function = insert_row_to_list(add_my_fruit)
-  streamlit.write('Thanks for adding ', back_from_function)
+  streamlit.text('Thanks for adding ', back_from_function)
 
 # Don't run anything beyong this
 streamlit.stop()
